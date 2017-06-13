@@ -1,0 +1,90 @@
+html {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+}
+
+#container {
+  width: 80%;
+  min-width: 400px;
+  max-width: 960px;
+  height: 750px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+ 
+.isa_info, .isa_success, .isa_warning, .isa_error {
+  margin: 10px 0px;
+  padding:12px;
+}
+.isa_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.isa_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.isa_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.isa_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+.isa_info i, .isa_success i, .isa_warning i, .isa_error i {
+    margin:10px 22px;
+    font-size:2em;
+    vertical-align:middle;
+}
+
+#errorIcon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#errorMessage {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#forum-group-errorbox {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: visibility 0s 1s, opacity 1s linear, max-height 1.1s ease-in;
+  -webkit-transition: visibility 0s 1s, opacity 1s linear, max-height 1.1s ease-in;
+  -moz-transition: visibility 0s 1s, opacity 1s linear, max-height 1.1s ease-in;
+  -ms-transition: visibility 0s 1s, opacity 1s linear, max-height 1.1s ease-in;
+  -o-transition: visibility 0s 1s, opacity 1s linear, max-height 1.1s ease-in;
+}
+
+#forum-group-errorbox.active {
+  visibility: visible;
+  opacity: 1;
+  max-height: 200px;
+  transition: opacity 0.5s linear, max-height 0.6s ease-in;
+  -webkit-transition: opacity 0.5s linear, max-height 0.6s ease-in;
+  -moz-transition: opacity 0.5s linear, max-height 0.6s ease-in;
+  -ms-transition: opacity 0.5s linear, max-height 0.6s ease-in;
+  -o-transition: opacity 0.5s linear, max-height 0.6s ease-in;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer p.copyright {
+  text-align: center;
+}
